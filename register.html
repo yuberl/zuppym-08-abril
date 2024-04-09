@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Register bien cool</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1 align="center">Registro nueva Pymes</h1>
+                <span>Utiliza los datos de tu empresa para continuar.</span>
+                <input id="txtPyName" placeholder="Nombre de la empresa">
+                <input id="txtPyNit" placeholder="NIT">
+                <input id="txtPyNumber" placeholder="Teléfono de la empresa">
+                <input id="txtPyPassword" type="password" placeholder="Contraseña">
+                <input id="txtRepeatPyPassword" type="password" placeholder="Repetir Contraseña">
+                <button onclick="registerPyUsers(event)">Regístrate</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1 align="center">Registro nuevo usuario</h1>
+                <span>Utiliza tus datos para continuar.</span>
+                <input id="txtName" placeholder="Nombre">
+                <input id="txtLastName" placeholder="Apellido">
+                <input id="txtEmail" placeholder="Email">
+                <input id="txtPassword" type="password" placeholder="Contraseña">
+                <input id="txtRepeatPassword" type="password" placeholder="Repetir Contraseña">
+                <button onclick="registerUsers(event)">Regístrate</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>¡Bienvenido!</h1>
+                    <p>Si deseas registrarte como usuario, oprime el botón de abajo.</p>
+                    <button class="hidden" id="login">Registro Usuario</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>¡Bienvenido!</h1>
+                    <p>Si deseas registrarte como usuario Pymes, oprime el botón de abajo.</p>
+                    <button class="hidden" id="register">Registro Pymes</button>
+                </div>
+            </div>
+        </div>
+    </div>	
+    <br/>
+    <div class="final">
+    	<p>¿Ya tienes una cuenta? Haz click abajo.</p>
+    	<button class="button_down" onclick="goLogin()">Inicia Sesión</button>
+    </div>
+
+    <script src="js/register.js"></script>
+</body>
+	
+</html>

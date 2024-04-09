@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<!--    <link rel="stylesheet" href="style.css">-->
+    <link href="css/style.css" rel="stylesheet">
+    <title>Login bien cool</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1 align="center">Inicia Sesión Pymes</h1>
+                <span>Utiliza tu NIT y contraseña para ingresar.</span>
+                <input id="txtNit" placeholder="NIT">
+                <input id="txtPyPassword" type="password" placeholder="Contraseña">
+                <button onclick="pyLogin(event)">Inicar Sesión</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form novalidate>
+                <h1>Inicia Sesión</h1>
+                <span>Utiliza tu correo y contraseña para ingresar.</span>
+                <input id="txtEmail" placeholder="Correo">
+                <input id="txtPassword" type="password" placeholder="Contraseña">
+                <button onclick="login(event)">Iniciar Sesión</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>¡Bienvenido de vuelta!</h1>
+                    <p>Si deseas ingresar como usuario, oprime el botón de abajo.</p>
+                    <button class="hidden" id="login">Soy Usuario</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>¡Bienvenido de vuelta!</h1>
+                    <p>Si deseas ingresar como usuario Pymes, oprime el botón de abajo.</p>
+                    <button class="hidden" id="register">Soy Pymes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="final">
+    	<p>¿Aún no tienes una cuenta? Haz click abajo.</p>
+    	<button class="button_down" onclick="goRegister()">Regístrate</button>
+    </div>
+
+	<script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+	
+</html>
